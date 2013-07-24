@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>jOrgChart - A jQuery OrgChart Plugin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart-mod.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="jquery.jOrgChart.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+        $("#org").jOrgChart({
+            chartElement : '#chart',
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <ul id="org" style="display:none">
+        <li>Kementerian Hukum dan HAM
+            <ul>
+                <li><a href="#">Sekretariat Jenderal (Hyperlink)</a></li>
+                <li>Inspektorat Jenderal</li>
+                <li>Staf Ahli</li>
+                <li>Direktorat Jenderal Peraturan Perundang-undangan</li>
+                <li>Direktorat Jenderal Administrasi Hukum Umum</li>
+                <li>Direktorat Jenderal Pemasyarakatan</li>
+                <li>Direktorat Jenderal Imigrasi</li>
+                <li>Direktorat Jenderal Hak dan Kekayaan Intelektual</li>
+                <li>Direktorat Jenderal Hak Asasi Manusia</li>
+                <li>Badan Pembinaan Hukum Nasional</li>
+                <li>Badan Penelitian dan Pengembangan Hak Asasi Manusia</li>
+                <li>Badan Pengembangan Sumber Daya Manusia Hukum dan Hak Asasi Manusia</li>
+                <li>Kanwil 1</li>
+                <li>Kanwil 2</li>
+                <li>Kanwil 3</li>
+                <li>Kanwil 4</li>
+                <li>Kanwil 5</li>
+                <li>Kanwil 6</li>
+                <li>Kanwil 7</li>
+                <li>Kanwil 8</li>
+                <li>Kanwil 9</li>
+                <li>Kanwil 10</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div id="chart" class="orgChart"></div>
+    
+</body>
+</html>
